@@ -1,0 +1,105 @@
+header{
+    background-color: black;
+    width: auto;
+    height: 100px;
+    margin: 0cm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    padding: 0cm;
+    margin: 0cm;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 40px;
+    color: blanchedalmond;
+    margin-left: 40px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav .navLi{
+    text-decoration: none;
+    display: inline-flex;
+    margin-right: 15px;
+}
+
+header nav .navLi a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+header nav .navLi a:hover{
+    color: #ebdddd;
+}
+
+.movieDiv{
+    height: 100px;
+    width: 100px;
+    background-color: blanchedalmond;
+
+}
+
+.main {
+    position: relative;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.genreType{
+    background-color:blanchedalmond;
+    align-items: center;
+}
+
+.movieName{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+#action-adventure { grid-area: 1 / 1 / 2 / 2; margin : "0 auto";}
+#animaiton { grid-area: 1 / 2 / 2 / 3;margin : "0 auto"; }
+#classic { grid-area: 2 / 1 / 3 / 2; margin : "0 auto";}
+#comedy { grid-area: 2 / 2 / 3 / 3; margin : "0 auto";}
+#drama { grid-area: 3 / 1 / 4 / 2; margin : "0 auto";}
+#horror { grid-area: 3 / 2 / 4 / 3; margin : "0 auto";}
+#family { grid-area: 4 / 1 / 5 / 2; margin : "0 auto";}
+#mistery { grid-area: 4 / 2 / 5 / 3; margin : "0 auto";}
+#scifi-fiction { grid-area: 5 / 1 / 6 / 2; margin : "0 auto";}
+#western { grid-area: 5 / 2 / 6 / 3; margin : "0 auto";}
+
+@media only screen and (max-width: 768px) {
+
+    .main {
+        position: relative;
+        background-color: blanchedalmond;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    #action-adventure { grid-area: 1 / 1 / 2 / 2; }
+    #animation { grid-area: 2 / 1 / 3 / 2; }
+    #classic { grid-area: 3 / 1 / 4 / 2; }
+    #comedy { grid-area: 4 / 1 / 5 / 2; }
+    #drama { grid-area: 5 / 1 / 6 / 2; }
+    #horror { grid-area: 6 / 1 / 7 / 2; }
+    #family { grid-area: 7 / 1 / 8 / 2; }
+    #mistery { grid-area: 8 / 1 / 9 / 2; }
+    #scifi-fiction { grid-area: 9 / 1 / 10 / 2; }
+    #western { grid-area: 10 / 1 / 11 / 2; }
+}

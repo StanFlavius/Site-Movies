@@ -1,0 +1,47 @@
+
+.slideshowClass{
+    background-color: "red";
+    align-items: center;
+    height : "500px";
+    width : "400px";
+    margin-left: '572.5px';
+    display : "flex";
+    flex-direction : "column";
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+.mainSR{
+    background-color: blanchedalmond;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form{
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    background-color: blanchedalmond;
+}
+
+.myInput{
+    padding: 5px;
+    margin: 5px;
+    justify-content: center;
+    display: flex;
+    width: 170px;
+    background-color: #c2bba9;
+    border-color: black;
+}
+
+.myButton{
+    padding: 5px;
+    margin: 5px;
+    justify-content: center;
+    display: flex;
+    border-color: black;
+    background-color: #c2bba9;
+}
